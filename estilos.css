@@ -16,13 +16,14 @@
   --naranja: #e2793a;
   --fondo: #f6f9fc;
   --blanco: #ffffff;
-  --texto: #1d2b3a;
+  --texto: #444444;
   --texto-suave: #55677a;
   --borde: #dbe5ee;
   --radio: 14px;
   --sombra: 0 6px 22px rgba(8, 47, 85, .10);
-  --fuente-titulos: "Montserrat", "Segoe UI", Arial, sans-serif;
-  --fuente-texto: "Open Sans", "Segoe UI", Arial, sans-serif;
+  /* Tipografías tomadas del sitio del municipio (tema WordPress): Raleway + Lato */
+  --fuente-titulos: "Raleway", Arial, Helvetica, sans-serif;
+  --fuente-texto: "Lato", Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -32,8 +33,11 @@ body {
   font-family: var(--fuente-texto);
   color: var(--texto);
   background: var(--fondo);
-  line-height: 1.65;
-  font-size: 17px;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 img, svg { max-width: 100%; }
 h1, h2, h3, h4 { font-family: var(--fuente-titulos); line-height: 1.2; margin: 0 0 .5em; color: var(--azul-900); }
