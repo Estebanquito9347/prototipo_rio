@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Río Xanaes · Gobierno Municipal de Arroyito</title>
+  <meta name="description" content="Conocé el río Xanaes: sus partes, las actividades que se realizan en Arroyito y cómo cuidarlo. Proyecto de estudiantes del INSM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="site-header" id="inicio">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Gobierno Municipal · Ciudad de Arroyito · Provincia de Córdoba</span>
+      <span class="topbar__right">Costas del Xanaes</span>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="#inicio" aria-label="Río Xanaes - inicio">
+        <!-- Reemplazar por el logo oficial del municipio (img) -->
+        <svg class="brand__logo" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="#fff"/>
+          <path d="M4 30c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#0b4f8a" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M4 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#2a9fd6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="33" cy="15" r="5" fill="#f2a900"/>
+        </svg>
+        <span class="brand__text"><strong>Río Xanaes</strong><small>Arroyito · Córdoba</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="#inicio" class="is-active">Inicio</a>
+        <a href="#conoce">Conocé el río</a>
+        <a href="#partes">Partes del río</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#cuidado">Cuidemos el Xanaes</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container hero__inner">
+      <p class="eyebrow">Nuestro río, nuestra identidad</p>
+      <h1>Río <span>Xanaes</span></h1>
+      <p class="hero__lead">Nace en las sierras, atraviesa la llanura pampeana, abraza a Arroyito con sus islas y playas y termina en la laguna de Mar Chiquita. Recorrelo con nosotros.</p>
+      <div class="hero__cta">
+        <a class="btn btn--accent" href="#partes">Recorrer el río</a>
+        <a class="btn btn--ghost" href="#cuidado">Cómo cuidarlo</a>
+      </div>
+
+      <ul class="stats" aria-label="Datos rápidos">
+        <li><strong data-count="340">340</strong><span>km de recorrido aprox.</span></li>
+        <li><strong data-count="2000">2.000</strong><span>m s. n. m. donde nace</span></li>
+        <li><strong data-count="2">2</strong><span>km de costanera en Arroyito aprox.</span></li>
+        <li><strong data-count="10">10</strong><span>hectáreas de balneario aprox.</span></li>
+      </ul>
+    </div>
+    <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z" fill="#f6f9fc"/>
+    </svg>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ CONOCÉ EL RÍO ============ -->
+  <section class="section" id="conoce">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Presentación</p>
+        <h2>Conocé el río Xanaes</h2>
+        <p>El Xanaes, también llamado río Segundo, es uno de los ríos más importantes del centro-norte de la provincia de Córdoba.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>Dos nombres, una historia</h3>
+          <p>«Segundo» fue el nombre que le dieron los españoles al ordenar los ríos de la región de norte a sur (Primero, Segundo, Tercero…). «Xanaes» sería de origen indígena, probablemente comechingón. En la zona muchas personas todavía le dicen «el Segundo».</p>
+        </article>
+        <article class="card">
+          <h3>Un río sin salida al mar</h3>
+          <p>Pertenece a una cuenca endorreica: sus aguas no llegan al mar, sino a la laguna de Mar Chiquita (Mar de Ansenuza), junto con los ríos Primero (Suquía) y Dulce.</p>
+        </article>
+        <article class="card">
+          <h3>Un río con memoria</h3>
+          <p>Su traza está acompañada por el antiguo Camino Real, por donde circulaban carretas y comerciantes. Arroyito era un punto clave de ese recorrido.</p>
+        </article>
+      </div>
+
+      <aside class="callout">
+        <strong>¿Sabías que…?</strong>
+        Por debajo del cauce visible, el Xanaes tiene un manto de arena (el <em>subalveo</em>) que almacena agua. Por eso, en épocas muy secas el río puede «cortarse» en superficie y mostrar su fondo arenoso, algo que ocurrió muy pocas veces en las últimas décadas.
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ PARTES DEL RÍO ============ -->
+  <section class="section section--alt" id="partes">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Del nacimiento a la desembocadura</p>
+        <h2>Las partes del río</h2>
+        <p>Tocá cada punto del mapa (o elegí una etapa) para recorrer el Xanaes desde las sierras hasta Mar Chiquita.</p>
+      </header>
+
+      <div class="river">
+        <figure class="river__map">
+          <svg viewBox="0 0 800 420" role="img" aria-label="Esquema del recorrido del río Xanaes de las sierras a Mar Chiquita">
+            <defs>
+              <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e8f4fb"/><stop offset="1" stop-color="#f6f9fc"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="420" rx="14" fill="url(#cielo)"/>
+            <!-- sierras -->
+            <path d="M0 420V330l45-70 40 45 55-85 60 110 40-40 40 40v90z" fill="#c9d8c5"/>
+            <path d="M0 420V360l50-50 45 40 50-60 55 70 50-30v90z" fill="#aac2a6"/>
+            <!-- Mar Chiquita -->
+            <ellipse cx="735" cy="42" rx="62" ry="30" fill="#bfe3f5" stroke="#2a9fd6" stroke-width="2"/>
+            <text x="735" y="20" text-anchor="middle" class="svg-label">Mar Chiquita</text>
+            <!-- río -->
+            <path id="riverPath" d="M60 360C160 340 180 260 280 270S420 330 480 250 600 150 680 140 740 80 735 60" fill="none" stroke="#2a9fd6" stroke-width="12" stroke-linecap="round"/>
+            <path d="M60 360C160 340 180 260 280 270S420 330 480 250 600 150 680 140 740 80 735 60" fill="none" stroke="#8fd0ee" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14" class="flow"/>
+            <!-- estaciones -->
+            <g class="stations">
+              <g class="station is-active" data-station="0" tabindex="0" role="button" aria-label="Cumbres de Achala"><circle cx="60" cy="360" r="15"/><text x="60" y="365" text-anchor="middle">1</text></g>
+              <g class="station" data-station="1" tabindex="0" role="button" aria-label="Confluencia y Despeñaderos"><circle cx="280" cy="270" r="15"/><text x="280" y="275" text-anchor="middle">2</text></g>
+              <g class="station" data-station="2" tabindex="0" role="button" aria-label="Llanura pampeana"><circle cx="480" cy="250" r="15"/><text x="480" y="255" text-anchor="middle">3</text></g>
+              <g class="station" data-station="3" tabindex="0" role="button" aria-label="Tramo de Arroyito"><circle cx="680" cy="140" r="15"/><text x="680" y="145" text-anchor="middle">4</text></g>
+              <g class="station" data-station="4" tabindex="0" role="button" aria-label="Curso bajo y Mar Chiquita"><circle cx="735" cy="60" r="15"/><text x="735" y="65" text-anchor="middle">5</text></g>
+            </g>
+            <text x="14" y="30" class="svg-small">Sierras de Córdoba</text>
+            <text x="14" y="46" class="svg-small">(esquema ilustrativo, sin escala)</text>
+            <text x="640" y="190" class="svg-label svg-label--city">Arroyito</text>
+          </svg>
+        </figure>
+
+        <div class="river__panel">
+          <div class="tabs" role="tablist" aria-label="Etapas del río" id="stationTabs"></div>
+          <article class="station-info" id="stationInfo" aria-live="polite">
+            <noscript>Activá JavaScript para ver el recorrido interactivo del río.</noscript>
+          </article>
+          <div class="river__nav">
+            <button class="btn btn--small btn--outline" id="prevStation">← Anterior</button>
+            <button class="btn btn--small" id="nextStation">Siguiente →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anatomía de un río -->
+      <h3 class="subtitle">Anatomía de un río: ¿cómo se llaman sus partes?</h3>
+      <div class="grid grid--4 anatomy">
+        <article class="mini"><span class="mini__icon">🏔️</span><h4>Naciente</h4><p>Lugar donde se origina el río. En el Xanaes, la unión de los ríos Anisacate y Los Molinos.</p></article>
+        <article class="mini"><span class="mini__icon">🌊</span><h4>Cauce o lecho</h4><p>El «canal» por donde corre el agua. En Arroyito es de fondo arenoso.</p></article>
+        <article class="mini"><span class="mini__icon">🌿</span><h4>Márgenes y riberas</h4><p>Los costados del río, donde crece el monte nativo. Son clave para evitar la erosión.</p></article>
+        <article class="mini"><span class="mini__icon">🏝️</span><h4>Islas</h4><p>Bancos de arena y vegetación rodeados de agua. Las de Arroyito son refugio de aves.</p></article>
+        <article class="mini"><span class="mini__icon">💧</span><h4>Afluentes</h4><p>Ríos y arroyos que le aportan agua, como el Anisacate, Los Molinos y sus tributarios.</p></article>
+        <article class="mini"><span class="mini__icon">📈</span><h4>Caudal</h4><p>Cantidad de agua que lleva. Cambia mucho entre el verano lluvioso y el invierno seco.</p></article>
+        <article class="mini"><span class="mini__icon">🗺️</span><h4>Cuenca</h4><p>Todo el territorio cuyas aguas terminan en el río. La del Xanaes es endorreica.</p></article>
+        <article class="mini"><span class="mini__icon">📍</span><h4>Desembocadura</h4><p>Donde termina: la laguna de Mar Chiquita, a unos 68–69 m s. n. m.</p></article>
+      </div>
+
+      <!-- Sectores de la costanera -->
+      <h3 class="subtitle">El Xanaes dentro de Arroyito: recorrido por la costanera</h3>
+      <p class="muted">La costanera tiene unos 2 km sobre la margen del río y está organizada por sectores. Este es el recorrido típico, de un extremo al otro:</p>
+      <ol class="timeline">
+        <li><strong>Isla de los Pájaros</strong><span>Punto de partida del paseo y de avistamiento de aves.</span></li>
+        <li><strong>Quinchos y Parque del Río</strong><span>Sector de quinchos con sanitarios y parque con islas unidas por puentes y senderos.</span></li>
+        <li><strong>Paseo de los Artesanos y sector comercial</strong><span>Feria de artesanos, heladería y cafetería.</span></li>
+        <li><strong>Puente colgante y zona de playa</strong><span>El corazón del balneario: playa, duchas, asadores, juegos para niños, escenario y estacionamiento.</span></li>
+        <li><strong>Senderos del Xanaes</strong><span>En la otra margen: un recorrido por islas y naturaleza, con puente de aventura y el mirador «El Mangrullo».</span></li>
+        <li><strong>Camping</strong><span>Con vestuarios y proveeduría.</span></li>
+        <li><strong>Sector Joven</strong><span>Islas deportivas, cancha de vóley, playa y parador con gastronomía y música.</span></li>
+      </ol>
+      <p class="note">Los sectores y servicios pueden cambiar según la temporada. Consultá siempre la información vigente del municipio.</p>
+    </div>
+  </section>
+
+  <!-- ============ ACTIVIDADES ============ -->
+  <section class="section" id="actividades">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Vivir el río</p>
+        <h2>¿Qué actividades se realizan en el Xanaes?</h2>
+        <p>Deporte, naturaleza, cultura y encuentro: el río es el gran espacio público de Arroyito.</p>
+      </header>
+
+      <div class="chips" role="group" aria-label="Filtrar actividades" id="chips">
+        <button class="chip is-active" data-filter="todas">Todas</button>
+        <button class="chip" data-filter="deporte">Deporte</button>
+        <button class="chip" data-filter="naturaleza">Naturaleza</button>
+        <button class="chip" data-filter="recreacion">Recreación</button>
+        <button class="chip" data-filter="comunidad">Comunidad</button>
+      </div>
+
+      <div class="grid grid--3" id="activityGrid">
+        <article class="card card--act" data-cat="deporte">
+          <span class="badge">Deporte</span>
+          <h3>🛶 Desafío del Xanaes</h3>
+          <p>La gran travesía en piraguas, kayaks y canoas, que se hace cada año en febrero. El último tramo une Villa del Rosario con Arroyito, con escala en Capilla del Carmen y Villa del Tránsito, y se acompaña con ciclistas por los caminos rurales de la costa.</p>
+          <p class="small">En su 20.ª edición (febrero de 2025) participaron más de 400 personas. Se suspende si el caudal es insuficiente o el clima es adverso.</p>
+        </article>
+
+        <article class="card card--act" data-cat="deporte">
+          <span class="badge">Deporte</span>
+          <h3>🚵 Arroyito Aventura</h3>
+          <p>Travesía «por tierra y agua» que combina bicicleta MTB, kayak o piragua y moto enduro por caminos rurales y el río, con llegada a las Costas del Xanaes.</p>
+          <p class="small">Siempre sujeta al clima, al caudal del río y a las recomendaciones de las autoridades.</p>
+        </article>
+
+        <article class="card card--act" data-cat="deporte">
+          <span class="badge">Deporte</span>
+          <h3>🎣 Pesca y tiro</h3>
+          <p>El tradicional Club del Río Xanaes hoy es el Club Deportivo de Pesca y Tiro Arroyito, con prácticas de tiro, un campo de arquería y proyectos de nuevas actividades en su predio.</p>
+        </article>
+
+        <article class="card card--act" data-cat="recreacion">
+          <span class="badge badge--azul">Recreación</span>
+          <h3>🏖️ Balneario municipal</h3>
+          <p>Playas de arena clara, aguas tranquilas, asadores, duchas, plaza de juegos, canchas de vóley en arena, camping y paradores. Es el gran punto de encuentro del verano en Arroyito.</p>
+        </article>
+
+        <article class="card card--act" data-cat="naturaleza">
+          <span class="badge badge--verde">Naturaleza</span>
+          <h3>🦆 Senderos y avistamiento de aves</h3>
+          <p>Las islas del río, el puente de aventura y el mirador «El Mangrullo» invitan a caminar, observar aves y conectarse con el monte ribereño.</p>
+        </article>
+
+        <article class="card card--act" data-cat="naturaleza">
+          <span class="badge badge--verde">Naturaleza</span>
+          <h3>🛶 Travesías en kayak</h3>
+          <p>Navegar el Xanaes permite conocer el río «desde adentro». Localidades vecinas, como Despeñaderos, también organizan travesías en kayak en temporada.</p>
+        </article>
+
+        <article class="card card--act" data-cat="comunidad">
+          <span class="badge badge--naranja">Comunidad</span>
+          <h3>💃 Arroyito se mueve</h3>
+          <p>Programa de la Dirección de Deportes que lleva clases de baile y actividades al aire libre a las canchas de arena del balneario, por ejemplo los domingos de febrero.</p>
+        </article>
+
+        <article class="card card--act" data-cat="comunidad">
+          <span class="badge badge--naranja">Comunidad</span>
+          <h3>🎶 Espectáculos y arte</h3>
+          <p>El balneario cuenta con escenario para espectáculos al aire libre, ferias de artesanos y propuestas de música y arte durante la temporada. Además, se proyecta un anfiteatro.</p>
+        </article>
+
+        <article class="card card--act" data-cat="comunidad">
+          <span class="badge badge--naranja">Comunidad</span>
+          <h3>🌱 Plantaciones escolares</h3>
+          <p>Estudiantes participan en jornadas de forestación con especies autóctonas en la costa del Xanaes, junto a la Dirección de Ambiente y Energía del municipio.</p>
+        </article>
+      </div>
+      <p class="note">Fechas, horarios y condiciones cambian cada año. Para inscripciones y consultas, comunicate con la Dirección de Deportes del municipio.</p>
+    </div>
+  </section>
+
+  <!-- ============ CUIDADO ============ -->
+  <section class="section section--dark" id="cuidado">
+    <div class="container">
+      <header class="section__head section__head--light">
+        <p class="eyebrow">Conciencia ambiental</p>
+        <h2>Cuidemos el Xanaes</h2>
+        <p>El agua es un recurso finito. Lo que hacemos hoy lo vamos a ver dentro de veinte o treinta años.</p>
+      </header>
+
+      <div class="grid grid--3 care">
+        <article class="card card--light">
+          <h3>🌳 Biocorredor Xanaes–Plujunta</h3>
+          <p>Desde 2025, Arroyito y el Ministerio de Ambiente de la Provincia impulsan un corredor biológico que une los parches de monte que quedan a lo largo del río (desde el Paraje La Curva hasta Marull), con apoyo de municipios vecinos del departamento San Justo.</p>
+        </article>
+        <article class="card card--light">
+          <h3>🌿 Monte nativo</h3>
+          <p>Se plantan especies autóctonas y se reemplaza de a poco el eucalipto, que consume mucha agua. Un «pulmón verde» en la zona del balneario forma parte del plan.</p>
+        </article>
+        <article class="card card--light">
+          <h3>🚰 Agua y cloacas</h3>
+          <p>Arroyito se abastece de agua subterránea, que se clora pero no pasa por planta potabilizadora. Por eso evitar su contaminación es esencial; la obra de cloacas del sector sur apunta a eso.</p>
+        </article>
+      </div>
+
+      <div class="flag">
+        <div class="flag__icon" aria-hidden="true">🚩</div>
+        <div>
+          <h3>Bandera roja: el río manda</h3>
+          <p>Cuando hay lluvias fuertes en la cuenca alta, el Xanaes puede crecer más de 2 metros en poco tiempo. Defensa Civil y Bomberos Voluntarios colocan <strong>banderas rojas</strong> en las márgenes: está prohibido entrar al agua e incluso acercarse a la orilla. Respetarlas puede salvar vidas.</p>
+        </div>
+      </div>
+
+      <div class="duo">
+        <!-- Checklist -->
+        <section class="panel" aria-labelledby="checkTitle">
+          <h3 id="checkTitle">Mi compromiso con el río</h3>
+          <p class="muted">Marcá lo que ya hacés (o te animás a hacer):</p>
+          <ul class="checklist" id="checklist">
+            <li><label><input type="checkbox"> Me llevo mi basura y uso los cestos del balneario</label></li>
+            <li><label><input type="checkbox"> No tiro colillas, plásticos ni vidrios en la arena ni en el agua</label></li>
+            <li><label><input type="checkbox"> Respeto las banderas rojas y las indicaciones de Defensa Civil</label></li>
+            <li><label><input type="checkbox"> Circulo por los senderos señalizados y no daño el monte</label></li>
+            <li><label><input type="checkbox"> No dejo fuegos prendidos y uso solo los asadores habilitados</label></li>
+            <li><label><input type="checkbox"> Cuido el agua en casa: duchas cortas y canillas bien cerradas</label></li>
+            <li><label><input type="checkbox"> Junto agua de lluvia para regar</label></li>
+            <li><label><input type="checkbox"> Planto especies nativas y participo en jornadas de forestación</label></li>
+          </ul>
+          <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+          <p class="progress__text" id="progressText" aria-live="polite">0 de 8 compromisos</p>
+        </section>
+
+        <!-- Quiz -->
+        <section class="panel" aria-labelledby="quizTitle">
+          <h3 id="quizTitle">¿Cuánto sabés del Xanaes?</h3>
+          <div id="quiz" class="quiz"></div>
+        </section>
+      </div>
+
+      <div class="share">
+        <h3>Compartí el mensaje</h3>
+        <p>El río es de todos y para todos. Cuidarlo es un trabajo diario, y empieza por cada uno de nosotros.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FUENTES ============ -->
+  <section class="section" id="fuentes">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Investigación</p>
+        <h2>Fuentes consultadas</h2>
+        <p>Información reunida por estudiantes del INSM a partir de fuentes públicas. Los datos pueden haber cambiado: ante dudas, consultar siempre al municipio.</p>
+      </header>
+      <ul class="sources">
+        <li><a href="https://es.wikipedia.org/wiki/R%C3%ADo_Segundo_(r%C3%ADo)" target="_blank" rel="noopener">Wikipedia · Río Segundo (río)</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Arroyito_(C%C3%B3rdoba)" target="_blank" rel="noopener">Wikipedia · Arroyito (Córdoba)</a></li>
+        <li><a href="https://www.lavozdesanjusto.com.ar/arroyito-un-destino-turistico-que-crece-cada-verano" target="_blank" rel="noopener">La Voz de San Justo · Arroyito, un destino turístico que crece cada verano</a></li>
+        <li><a href="https://www.lavozdesanjusto.com.ar/el-rio-xanaes-como-eje-de-conciencia-ambiental-en-arroyito" target="_blank" rel="noopener">La Voz de San Justo · El río Xanaes como eje de conciencia ambiental en Arroyito</a></li>
+        <li><a href="https://www.municipioarroyito.gob.ar/2025/05/06/arroyito-y-el-ministerio-de-ambiente-protegen-las-margenes-del-rio-xanaes-con-el-primer-biocorredor-del-departamento-san-justo/" target="_blank" rel="noopener">Municipalidad de Arroyito · Biocorredor Xanaes–Plujunta</a></li>
+        <li><a href="https://www.municipioarroyito.gob.ar/tag/desafio-del-xanaes/" target="_blank" rel="noopener">Municipalidad de Arroyito · Desafío del Xanaes</a></li>
+        <li><a href="https://www.municipioarroyito.gob.ar/2024/03/15/llega-la-2da-edicion-de-arroyito-aventura-una-travesia-por-tierra-y-agua/" target="_blank" rel="noopener">Municipalidad de Arroyito · Arroyito Aventura</a></li>
+        <li><a href="https://www.municipioarroyito.gob.ar/2023/07/25/torneos-y-competencias-del-club-deportivo-de-pesca-y-tiro-arroyito/" target="_blank" rel="noopener">Municipalidad de Arroyito · Club Deportivo de Pesca y Tiro</a></li>
+        <li><a href="https://www.municipioarroyito.gob.ar/2025/01/29/baile-en-las-costas-del-xanaes/" target="_blank" rel="noopener">Municipalidad de Arroyito · Baile en las Costas del Xanaes</a></li>
+        <li><a href="https://www.turismocordoba.com.ar/arroyito/playas.php" target="_blank" rel="noopener">Turismo Córdoba · Playas y balnearios de Arroyito</a></li>
+        <li><a href="https://www.laradio1029.com.ar/2023/10/19/arroyito-por-la-intensa-sequia-se-seco-el-rio-xanaes/" target="_blank" rel="noopener">La Radio 102.9 · Por la intensa sequía, se secó el río Xanaes</a></li>
+        <li><a href="https://cordobainteriorinforma.com/2025/03/14/alerta-en-arroyito-por-la-gran-creciente-del-rio-xanaes/" target="_blank" rel="noopener">Córdoba Interior Informa · Alerta por la creciente del Xanaes</a></li>
+        <li><a href="https://www.promarmarchiquita.com.ar/contenidos/preguntas-frecuentes-12" target="_blank" rel="noopener">Promar Mar Chiquita · Preguntas frecuentes</a></li>
+        <li><a href="https://www.abriendorutas.tur.ar/post/la-ruta-secreta-para-conocer-el-nacimiento-del-r%C3%ADo-xanaes" target="_blank" rel="noopener">Abriendo Rutas · El nacimiento del río Xanaes</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div>
+      <strong>Gobierno Municipal · Ciudad de Arroyito</strong>
+      <p>Provincia de Córdoba · Argentina</p>
+    </div>
+    <div>
+      <p>Proyecto educativo realizado por estudiantes del INSM.</p>
+      <p><small>© <span id="year"></span> · Contenido informativo, sujeto a revisión del municipio.</small></p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
