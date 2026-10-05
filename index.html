@@ -19,7 +19,7 @@
   <div class="navbar">
     <div class="container navbar__inner">
       <a class="brand" href="#inicio" aria-label="Río Xanaes - inicio">
-        <!-- Reemplazar por el logo oficial del municipio (img) -->
+        <!-- Reemplazar por el logo oficial chico del municipio -->
         <svg class="brand__logo" viewBox="0 0 48 48" aria-hidden="true">
           <circle cx="33" cy="14" r="6" fill="#f5a31a"/>
           <path d="M4 28c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#e5a823" stroke-width="4" stroke-linecap="round"/>
@@ -43,49 +43,49 @@
     </div>
   </div>
 
-  <div class="masthead">
-    <div class="container masthead__inner">
-      <div class="masthead__gov">
-        <!-- Marca provisoria: reemplazar por el logo oficial del municipio -->
-        <svg class="masthead__mark" viewBox="0 0 120 56" aria-hidden="true">
-          <circle cx="86" cy="14" r="9" fill="#f5a31a"/>
-          <path d="M6 32c10-9 18-9 28 0s18 9 28 0 18-9 28 0 14 6 22 0" fill="none" stroke="#e5a823" stroke-width="7" stroke-linecap="round"/>
-          <path d="M6 48c10-9 18-9 28 0s18 9 28 0 18-9 28 0 14 6 22 0" fill="none" stroke="#7ec3e0" stroke-width="7" stroke-linecap="round"/>
+  <!-- Encabezado grande tipo logo. Reemplazar por la imagen oficial del municipio:
+       <img class="logo-img" src="logo-municipio.png" alt="Gobierno Municipal · Ciudad de Arroyito"> -->
+  <div class="logo-header">
+    <div class="logo-header__inner">
+      <div class="lh-gov">
+        <svg class="lh-mark" viewBox="0 0 120 50" aria-hidden="true">
+          <path d="M20 46h80V36H88V24H32v12H20z" fill="#e5a823"/>
+          <path d="M44 24V12h32v12" fill="none" stroke="#e5a823" stroke-width="6"/>
         </svg>
-        <p class="masthead__t1">Gobierno Municipal</p>
-        <p class="masthead__t2">Ciudad de Arroyito</p>
+        <p class="lh-t1">Gobierno Municipal</p>
+        <p class="lh-t2">Ciudad de Arroyito</p>
       </div>
-      <span class="masthead__bar" aria-hidden="true"></span>
-      <div class="masthead__slogan">
-        <h1>
-          <span class="h1-top"><span class="c1">Río</span> <span class="c2">Xanaes</span></span>
-          <span class="h1-sub">Conocelo · Disfrutalo · Cuidalo</span>
-        </h1>
+      <span class="lh-bar" aria-hidden="true"></span>
+      <div class="lh-slogan" role="img" aria-label="Río Xanaes, conocelo, disfrutalo, cuidalo">
+        <p class="lh-juntos"><span class="l1">R</span><span class="l2">Í</span><span class="l3">O</span><span class="l4"> </span><span class="l5">X</span><span class="l6">A</span><span class="l1">N</span><span class="l2">A</span><span class="l3">E</span><span class="l4">S</span></p>
+        <p class="lh-hacemos">Conocelo · Disfrutalo · Cuidalo</p>
       </div>
     </div>
-    <p class="masthead__lead container">Nace en las sierras, atraviesa la llanura pampeana, abraza a Arroyito con sus islas y playas y termina en la laguna de Mar Chiquita. Recorrelo con nosotros.</p>
   </div>
 
-  <div class="container">
+  <div class="column">
     <div class="banners">
-      <a class="banner banner--turquesa" href="#partes"><span>Recorré <b>el río</b></span><small>Mapa interactivo de sus partes</small></a>
-      <a class="banner banner--gris" href="#actividades"><span>Actividades <b>en el Xanaes</b></span><small>Deporte, naturaleza y encuentro</small></a>
-      <a class="banner banner--rosa" href="#cuidado"><span>Cuidemos <b>el río</b></span><small>Conciencia ambiental</small></a>
+      <a class="banner banner--turquesa" href="#partes">
+        <span class="b-title">Conocé y recorré <b>el río</b></span>
+        <span class="b-sub">Mapa interactivo de sus partes</span>
+        <span class="b-pill">Clickeá aquí</span>
+      </a>
+      <a class="banner banner--gris" href="#actividades">
+        <span class="b-title b-title--thin">Actividades <b>en el Xanaes</b></span>
+        <span class="b-sub">Deporte, naturaleza y encuentro</span>
+      </a>
+      <a class="banner banner--rosa" href="#cuidado">
+        <span class="b-title b-title--thin">Cuidemos <b>el río</b></span>
+        <span class="b-sub">Conciencia ambiental · Arroyito</span>
+      </a>
     </div>
 
     <ul class="quick" aria-label="Accesos rápidos">
-      <li><a href="#conoce"><span class="circle" aria-hidden="true">🌊</span><small>Conocé<br>el río</small></a></li>
-      <li><a href="#partes"><span class="circle" aria-hidden="true">🗺️</span><small>Partes<br>del río</small></a></li>
-      <li><a href="#actividades"><span class="circle" aria-hidden="true">🛶</span><small>Actividades</small></a></li>
-      <li><a href="#cuidado"><span class="circle" aria-hidden="true">💧</span><small>Cuidemos<br>el Xanaes</small></a></li>
-      <li><a href="#fuentes"><span class="circle" aria-hidden="true">📚</span><small>Fuentes</small></a></li>
-    </ul>
-
-    <ul class="stats" aria-label="Datos rápidos">
-      <li><strong data-count="340">340</strong><span>km de recorrido aprox.</span></li>
-      <li><strong data-count="2000">2.000</strong><span>m s. n. m. donde nace</span></li>
-      <li><strong data-count="2">2</strong><span>km de costanera en Arroyito aprox.</span></li>
-      <li><strong data-count="10">10</strong><span>hectáreas de balneario aprox.</span></li>
+      <li><a href="#conoce"><span class="circle c-naranja"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9c2.5-2.5 4.5-2.5 7 0s4.5 2.5 7 0 3-2 6 0"/><path d="M2 16c2.5-2.5 4.5-2.5 7 0s4.5 2.5 7 0 3-2 6 0"/></svg></span><small>Conocé<br>el río</small></a></li>
+      <li><a href="#partes"><span class="circle c-violeta"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></span><small>Partes<br>del río</small></a></li>
+      <li><a href="#actividades"><span class="circle c-turquesa"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15c6 4.5 14 4.5 20 0"/><path d="M5 12.5 19 8"/><path d="M12 10.3V14"/></svg></span><small>Actividades</small></a></li>
+      <li><a href="#cuidado"><span class="circle c-magenta"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span><small>Cuidemos<br>el Xanaes</small></a></li>
+      <li><a href="#fuentes"><span class="circle c-celeste"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5z"/><path d="M6 19h13"/></svg></span><small>Fuentes</small></a></li>
     </ul>
   </div>
 </header>
@@ -97,9 +97,16 @@
     <div class="container">
       <header class="section__head">
         <p class="eyebrow eyebrow--dark">Presentación</p>
-        <h2>Conocé el río <span>Xanaes</span></h2>
+        <h1>Conocé el río <span>Xanaes</span></h1>
         <p>El Xanaes, también llamado río Segundo, es uno de los ríos más importantes del centro-norte de la provincia de Córdoba.</p>
       </header>
+      <ul class="stats" aria-label="Datos rápidos">
+        <li><strong data-count="340">340</strong><span>km de recorrido aprox.</span></li>
+        <li><strong data-count="2000">2.000</strong><span>m s. n. m. donde nace</span></li>
+        <li><strong data-count="2">2</strong><span>km de costanera en Arroyito aprox.</span></li>
+        <li><strong data-count="10">10</strong><span>hectáreas de balneario aprox.</span></li>
+      </ul>
+
 
       <div class="grid grid--3">
         <article class="card">
@@ -224,58 +231,67 @@
 
       <div class="grid grid--3" id="activityGrid">
         <article class="card card--act" data-cat="deporte">
+          <div class="thumb" aria-hidden="true"><span>🛶</span></div>
           <span class="badge">Deporte</span>
-          <h3>🛶 Desafío del Xanaes</h3>
+          <h3>Desafío del Xanaes</h3>
           <p>La gran travesía en piraguas, kayaks y canoas, que se hace cada año en febrero. El último tramo une Villa del Rosario con Arroyito, con escala en Capilla del Carmen y Villa del Tránsito, y se acompaña con ciclistas por los caminos rurales de la costa.</p>
           <p class="small">En su 20.ª edición (febrero de 2025) participaron más de 400 personas. Se suspende si el caudal es insuficiente o el clima es adverso.</p>
         </article>
 
         <article class="card card--act" data-cat="deporte">
+          <div class="thumb" aria-hidden="true"><span>🚵</span></div>
           <span class="badge">Deporte</span>
-          <h3>🚵 Arroyito Aventura</h3>
+          <h3>Arroyito Aventura</h3>
           <p>Travesía «por tierra y agua» que combina bicicleta MTB, kayak o piragua y moto enduro por caminos rurales y el río, con llegada a las Costas del Xanaes.</p>
           <p class="small">Siempre sujeta al clima, al caudal del río y a las recomendaciones de las autoridades.</p>
         </article>
 
         <article class="card card--act" data-cat="deporte">
+          <div class="thumb" aria-hidden="true"><span>🎣</span></div>
           <span class="badge">Deporte</span>
-          <h3>🎣 Pesca y tiro</h3>
+          <h3>Pesca y tiro</h3>
           <p>El tradicional Club del Río Xanaes hoy es el Club Deportivo de Pesca y Tiro Arroyito, con prácticas de tiro, un campo de arquería y proyectos de nuevas actividades en su predio.</p>
         </article>
 
         <article class="card card--act" data-cat="recreacion">
+          <div class="thumb" aria-hidden="true"><span>🏖️</span></div>
           <span class="badge badge--azul">Recreación</span>
-          <h3>🏖️ Balneario municipal</h3>
+          <h3>Balneario municipal</h3>
           <p>Playas de arena clara, aguas tranquilas, asadores, duchas, plaza de juegos, canchas de vóley en arena, camping y paradores. Es el gran punto de encuentro del verano en Arroyito.</p>
         </article>
 
         <article class="card card--act" data-cat="naturaleza">
+          <div class="thumb" aria-hidden="true"><span>🦆</span></div>
           <span class="badge badge--verde">Naturaleza</span>
-          <h3>🦆 Senderos y avistamiento de aves</h3>
+          <h3>Senderos y avistamiento de aves</h3>
           <p>Las islas del río, el puente de aventura y el mirador «El Mangrullo» invitan a caminar, observar aves y conectarse con el monte ribereño.</p>
         </article>
 
         <article class="card card--act" data-cat="naturaleza">
+          <div class="thumb" aria-hidden="true"><span>🛶</span></div>
           <span class="badge badge--verde">Naturaleza</span>
-          <h3>🛶 Travesías en kayak</h3>
+          <h3>Travesías en kayak</h3>
           <p>Navegar el Xanaes permite conocer el río «desde adentro». Localidades vecinas, como Despeñaderos, también organizan travesías en kayak en temporada.</p>
         </article>
 
         <article class="card card--act" data-cat="comunidad">
+          <div class="thumb" aria-hidden="true"><span>💃</span></div>
           <span class="badge badge--naranja">Comunidad</span>
-          <h3>💃 Arroyito se mueve</h3>
+          <h3>Arroyito se mueve</h3>
           <p>Programa de la Dirección de Deportes que lleva clases de baile y actividades al aire libre a las canchas de arena del balneario, por ejemplo los domingos de febrero.</p>
         </article>
 
         <article class="card card--act" data-cat="comunidad">
+          <div class="thumb" aria-hidden="true"><span>🎶</span></div>
           <span class="badge badge--naranja">Comunidad</span>
-          <h3>🎶 Espectáculos y arte</h3>
+          <h3>Espectáculos y arte</h3>
           <p>El balneario cuenta con escenario para espectáculos al aire libre, ferias de artesanos y propuestas de música y arte durante la temporada. Además, se proyecta un anfiteatro.</p>
         </article>
 
         <article class="card card--act" data-cat="comunidad">
+          <div class="thumb" aria-hidden="true"><span>🌱</span></div>
           <span class="badge badge--naranja">Comunidad</span>
-          <h3>🌱 Plantaciones escolares</h3>
+          <h3>Plantaciones escolares</h3>
           <p>Estudiantes participan en jornadas de forestación con especies autóctonas en la costa del Xanaes, junto a la Dirección de Ambiente y Energía del municipio.</p>
         </article>
       </div>
