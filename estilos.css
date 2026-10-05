@@ -386,3 +386,8 @@ a { color: var(--turquesa-oscuro); }
   #activityGrid { column-count: 1; }
   .banner { padding-inline: 2.4rem; }
 }
+
+
+/* Espacio de la imagen del encabezado */
+.logo-header { padding: 1.2rem 1.25rem .4rem; text-align: center; }
+.logo-img { display: block; width: min(1100px, 100%); height: auto; margin: 0 auto; }
