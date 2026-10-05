@@ -16,24 +16,16 @@
 
 <!-- ============ ENCABEZADO ============ -->
 <header class="site-header" id="inicio">
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <span>Gobierno Municipal · Ciudad de Arroyito · Provincia de Córdoba</span>
-      <span class="topbar__right">Costas del Xanaes</span>
-    </div>
-  </div>
-
   <div class="navbar">
     <div class="container navbar__inner">
       <a class="brand" href="#inicio" aria-label="Río Xanaes - inicio">
         <!-- Reemplazar por el logo oficial del municipio (img) -->
         <svg class="brand__logo" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="23" fill="#fff"/>
-          <path d="M4 30c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#0b4f8a" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M4 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#2a9fd6" stroke-width="3.5" stroke-linecap="round"/>
-          <circle cx="33" cy="15" r="5" fill="#f2a900"/>
+          <circle cx="33" cy="14" r="6" fill="#f5a31a"/>
+          <path d="M4 28c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#e5a823" stroke-width="4" stroke-linecap="round"/>
+          <path d="M4 38c5-5 9-5 14 0s9 5 14 0 9-5 12-2" fill="none" stroke="#7ec3e0" stroke-width="4" stroke-linecap="round"/>
         </svg>
-        <span class="brand__text"><strong>Río Xanaes</strong><small>Arroyito · Córdoba</small></span>
+        <span class="brand__text"><strong>Río Xanaes</strong></span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
@@ -43,34 +35,58 @@
       <nav class="menu" id="menu" aria-label="Principal">
         <a href="#inicio" class="is-active">Inicio</a>
         <a href="#conoce">Conocé el río</a>
-        <a href="#partes">Partes del río</a>
+        <a href="#partes">Partes</a>
         <a href="#actividades">Actividades</a>
-        <a href="#cuidado">Cuidemos el Xanaes</a>
+        <a href="#cuidado">Cuidado</a>
         <a href="#fuentes">Fuentes</a>
       </nav>
     </div>
   </div>
 
-  <div class="hero">
-    <div class="container hero__inner">
-      <p class="eyebrow">Nuestro río, nuestra identidad</p>
-      <h1>Río <span>Xanaes</span></h1>
-      <p class="hero__lead">Nace en las sierras, atraviesa la llanura pampeana, abraza a Arroyito con sus islas y playas y termina en la laguna de Mar Chiquita. Recorrelo con nosotros.</p>
-      <div class="hero__cta">
-        <a class="btn btn--accent" href="#partes">Recorrer el río</a>
-        <a class="btn btn--ghost" href="#cuidado">Cómo cuidarlo</a>
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <div class="masthead__gov">
+        <!-- Marca provisoria: reemplazar por el logo oficial del municipio -->
+        <svg class="masthead__mark" viewBox="0 0 120 56" aria-hidden="true">
+          <circle cx="86" cy="14" r="9" fill="#f5a31a"/>
+          <path d="M6 32c10-9 18-9 28 0s18 9 28 0 18-9 28 0 14 6 22 0" fill="none" stroke="#e5a823" stroke-width="7" stroke-linecap="round"/>
+          <path d="M6 48c10-9 18-9 28 0s18 9 28 0 18-9 28 0 14 6 22 0" fill="none" stroke="#7ec3e0" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <p class="masthead__t1">Gobierno Municipal</p>
+        <p class="masthead__t2">Ciudad de Arroyito</p>
       </div>
-
-      <ul class="stats" aria-label="Datos rápidos">
-        <li><strong data-count="340">340</strong><span>km de recorrido aprox.</span></li>
-        <li><strong data-count="2000">2.000</strong><span>m s. n. m. donde nace</span></li>
-        <li><strong data-count="2">2</strong><span>km de costanera en Arroyito aprox.</span></li>
-        <li><strong data-count="10">10</strong><span>hectáreas de balneario aprox.</span></li>
-      </ul>
+      <span class="masthead__bar" aria-hidden="true"></span>
+      <div class="masthead__slogan">
+        <h1>
+          <span class="h1-top"><span class="c1">Río</span> <span class="c2">Xanaes</span></span>
+          <span class="h1-sub">Conocelo · Disfrutalo · Cuidalo</span>
+        </h1>
+      </div>
     </div>
-    <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 40c120 40 240 40 360 10s240-50 360-30 240 50 360 40 240-40 360-20v40H0z" fill="#f6f9fc"/>
-    </svg>
+    <p class="masthead__lead container">Nace en las sierras, atraviesa la llanura pampeana, abraza a Arroyito con sus islas y playas y termina en la laguna de Mar Chiquita. Recorrelo con nosotros.</p>
+  </div>
+
+  <div class="container">
+    <div class="banners">
+      <a class="banner banner--turquesa" href="#partes"><span>Recorré <b>el río</b></span><small>Mapa interactivo de sus partes</small></a>
+      <a class="banner banner--gris" href="#actividades"><span>Actividades <b>en el Xanaes</b></span><small>Deporte, naturaleza y encuentro</small></a>
+      <a class="banner banner--rosa" href="#cuidado"><span>Cuidemos <b>el río</b></span><small>Conciencia ambiental</small></a>
+    </div>
+
+    <ul class="quick" aria-label="Accesos rápidos">
+      <li><a href="#conoce"><span class="circle" aria-hidden="true">🌊</span><small>Conocé<br>el río</small></a></li>
+      <li><a href="#partes"><span class="circle" aria-hidden="true">🗺️</span><small>Partes<br>del río</small></a></li>
+      <li><a href="#actividades"><span class="circle" aria-hidden="true">🛶</span><small>Actividades</small></a></li>
+      <li><a href="#cuidado"><span class="circle" aria-hidden="true">💧</span><small>Cuidemos<br>el Xanaes</small></a></li>
+      <li><a href="#fuentes"><span class="circle" aria-hidden="true">📚</span><small>Fuentes</small></a></li>
+    </ul>
+
+    <ul class="stats" aria-label="Datos rápidos">
+      <li><strong data-count="340">340</strong><span>km de recorrido aprox.</span></li>
+      <li><strong data-count="2000">2.000</strong><span>m s. n. m. donde nace</span></li>
+      <li><strong data-count="2">2</strong><span>km de costanera en Arroyito aprox.</span></li>
+      <li><strong data-count="10">10</strong><span>hectáreas de balneario aprox.</span></li>
+    </ul>
   </div>
 </header>
 
@@ -81,7 +97,7 @@
     <div class="container">
       <header class="section__head">
         <p class="eyebrow eyebrow--dark">Presentación</p>
-        <h2>Conocé el río Xanaes</h2>
+        <h2>Conocé el río <span>Xanaes</span></h2>
         <p>El Xanaes, también llamado río Segundo, es uno de los ríos más importantes del centro-norte de la provincia de Córdoba.</p>
       </header>
 
@@ -112,7 +128,7 @@
     <div class="container">
       <header class="section__head">
         <p class="eyebrow eyebrow--dark">Del nacimiento a la desembocadura</p>
-        <h2>Las partes del río</h2>
+        <h2>Las partes <span>del río</span></h2>
         <p>Tocá cada punto del mapa (o elegí una etapa) para recorrer el Xanaes desde las sierras hasta Mar Chiquita.</p>
       </header>
 
@@ -194,7 +210,7 @@
     <div class="container">
       <header class="section__head">
         <p class="eyebrow eyebrow--dark">Vivir el río</p>
-        <h2>¿Qué actividades se realizan en el Xanaes?</h2>
+        <h2>¿Qué actividades <span>se realizan?</span></h2>
         <p>Deporte, naturaleza, cultura y encuentro: el río es el gran espacio público de Arroyito.</p>
       </header>
 
@@ -272,7 +288,7 @@
     <div class="container">
       <header class="section__head section__head--light">
         <p class="eyebrow">Conciencia ambiental</p>
-        <h2>Cuidemos el Xanaes</h2>
+        <h2>Cuidemos <span>el Xanaes</span></h2>
         <p>El agua es un recurso finito. Lo que hacemos hoy lo vamos a ver dentro de veinte o treinta años.</p>
       </header>
 
@@ -337,7 +353,7 @@
     <div class="container">
       <header class="section__head">
         <p class="eyebrow eyebrow--dark">Investigación</p>
-        <h2>Fuentes consultadas</h2>
+        <h2>Fuentes <span>consultadas</span></h2>
         <p>Información reunida por estudiantes del INSM a partir de fuentes públicas. Los datos pueden haber cambiado: ante dudas, consultar siempre al municipio.</p>
       </header>
       <ul class="sources">
