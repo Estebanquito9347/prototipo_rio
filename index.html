@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css?v=3">
 </head>
 <body>
 
@@ -188,7 +188,7 @@
       <!-- Caudal: comparación visual -->
       <h3 class="subtitle">El caudal del río: bajo, normal y crecida</h3>
       <p class="muted">El caudal es la cantidad de agua que lleva el río. Mirá cómo cambia el mismo tramo según la época:</p>
-      <div class="caudal" id="caudal">
+      <div class="caudal" id="caudal" data-nivel="bajo">
         <div class="caudal__tabs" role="group" aria-label="Elegir nivel de caudal">
           <button class="chip is-active" data-nivel="bajo">Caudal bajo</button>
           <button class="chip" data-nivel="normal">Caudal normal</button>
@@ -203,13 +203,15 @@
             <g fill="#4f8a5b"><circle cx="40" cy="100" r="20"/><circle cx="75" cy="112" r="16"/><circle cx="560" cy="100" r="20"/><circle cx="525" cy="112" r="16"/></g>
             <g stroke="#6b4a2b" stroke-width="5"><path d="M40 118v-8M75 126v-8M560 118v-8M525 126v-8"/></g>
             <!-- agua -->
-            <path id="aguaCaudal" d="M200 215 L400 215 L395 200 L205 200 Z" fill="#2a9fd6" opacity=".85" style="transition: d .5s"/>
+            <path class="agua agua--bajo" d="M181.5 200 L418.5 200 L400 215 L200 215 Z"/>
+            <path class="agua agua--normal" d="M138.5 165 L461.5 165 L400 215 L200 215 Z"/>
+            <path class="agua agua--crecida" d="M0 112 L600 112 L600 120 L480 150 L400 215 L200 215 L120 150 L0 120 Z"/>
             <!-- escala -->
             <line x1="300" y1="215" x2="300" y2="60" stroke="#444" stroke-dasharray="4 4"/>
             <text id="caudalMedida" x="310" y="75" class="svg-label">Nivel: bajo</text>
             <text x="14" y="245" class="svg-small" fill="#444">Esquema ilustrativo, sin escala</text>
           </svg>
-          <figcaption id="caudalTexto" aria-live="polite"></figcaption>
+          <figcaption id="caudalTexto" aria-live="polite">Caudal bajo: típico de la época seca. Se ven bancos de arena y el agua ocupa solo el centro del cauce. En sequías muy intensas el río puede cortarse en superficie.</figcaption>
         </figure>
       </div>
 
@@ -221,7 +223,7 @@
         <li><strong>Quinchos y Parque del Río</strong><span>Sector de quinchos con sanitarios y parque con islas unidas por puentes y senderos.</span></li>
         <li><strong>Paseo de los Artesanos y sector comercial</strong><span>Feria de artesanos, heladería y cafetería.</span></li>
         <li><strong>Puente colgante y zona de playa</strong><span>El corazón del balneario: playa, duchas, asadores, juegos para niños, escenario y estacionamiento.</span></li>
-        <li><strong>Senderos del Xanaes</strong><span>En la otra margen: un recorrido por islas y naturaleza, con puente de aventura y el mirador «El Mangrullo».</span></li>
+        <li><strong>Senderos del Xanaes</strong><span>En la otra margen: un recorrido por islas y naturaleza, con puente de aventura entre islas y un mirador.</span></li>
         <li><strong>Camping</strong><span>Con vestuarios y proveeduría.</span></li>
         <li><strong>Sector Joven</strong><span>Islas deportivas, cancha de vóley, playa y parador con gastronomía y música.</span></li>
       </ol>
@@ -281,7 +283,7 @@
           <div class="thumb" aria-hidden="true"><span>🦆</span></div>
           <span class="badge badge--verde">Naturaleza</span>
           <h3>Senderos y avistamiento de aves</h3>
-          <p>Las islas del río, el puente de aventura y el mirador «El Mangrullo» invitan a caminar, observar aves y conectarse con el monte ribereño.</p>
+          <p>Las islas del río, el puente de aventura y el mirador invitan a caminar, observar aves y conectarse con el monte ribereño.</p>
         </article>
 
         <article class="card card--act" data-cat="naturaleza">
@@ -577,7 +579,7 @@
 
 <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
 
-<script src="script.js"></script>
-<script src="extras.js"></script>
+<script src="script.js?v=3"></script>
+<script src="extras.js?v=3"></script>
 </body>
 </html>

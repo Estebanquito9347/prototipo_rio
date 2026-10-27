@@ -41,7 +41,6 @@
   function initCaudal() {
     var cont = document.getElementById('caudal');
     if (!cont) return;
-    var agua = document.getElementById('aguaCaudal');
     var medida = document.getElementById('caudalMedida');
     var texto = document.getElementById('caudalTexto');
     var botones = cont.querySelectorAll('[data-nivel]');
@@ -49,7 +48,6 @@
     function mostrar(nivel) {
       var n = NIVELES[nivel];
       if (!n) return;
-      agua.setAttribute('d', n.agua);
       medida.textContent = n.etiqueta;
       texto.textContent = n.texto;
       botones.forEach(function (b) {
@@ -156,10 +154,16 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
+  function iniciar() {
     initCaudal();
     initComparadores();
     initVideos();
     initImpacto();
-  });
+  }
+  // Si la página ya terminó de cargar, arranca enseguida; si no, espera.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', iniciar);
+  } else {
+    iniciar();
+  }
 })();

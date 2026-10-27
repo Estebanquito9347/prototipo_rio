@@ -454,3 +454,19 @@ a { color: var(--turquesa-oscuro); }
 @media (prefers-reduced-motion: reduce) {
   .impact .progress__bar { transition: none; }
 }
+
+/* Menú con 8 enlaces: más compacto en pantallas medianas */
+@media (min-width: 861px) and (max-width: 1040px) {
+  .menu a { padding: .35rem .42rem; letter-spacing: .03em; }
+}
+
+/* Corrección: el filtro de actividades no ocultaba tarjetas
+   (la regla de display del mosaico anulaba el atributo hidden) */
+#activityGrid .card--act[hidden] { display: none; }
+
+/* Caudal: cada nivel de agua es una capa que se muestra u oculta */
+.caudal .agua { fill: #2a9fd6; opacity: 0; transition: opacity .4s; }
+.caudal .agua--crecida { fill: #8c7a55; }
+.caudal[data-nivel="bajo"] .agua--bajo { opacity: .9; }
+.caudal[data-nivel="normal"] .agua--normal { opacity: .9; }
+.caudal[data-nivel="crecida"] .agua--crecida { opacity: .85; }
