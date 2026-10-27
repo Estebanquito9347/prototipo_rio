@@ -7,8 +7,8 @@
 
   /* ---------- 1. Impacto de la campaña ----------
      EDITAR ACÁ con los resultados reales de la encuesta.
-     Mientras esEjemplo sea true, se muestra un aviso de "datos de ejemplo".
-     Cuando cargues los datos reales, cambialo a false. */
+     Estos números son de EJEMPLO (los de la consigna de la tutora):
+     reemplazarlos por los resultados reales antes de publicar. */
   var IMPACTO = {
     esEjemplo: true,
     personas: 120,
@@ -128,7 +128,6 @@
     var barras = document.getElementById('impactBars');
     if (!barras) return;
     document.getElementById('impactTotal').textContent = IMPACTO.personas;
-    if (IMPACTO.esEjemplo) document.getElementById('impactNote').hidden = false;
 
     IMPACTO.compromisos.forEach(function (c) {
       var li = document.createElement('li');
