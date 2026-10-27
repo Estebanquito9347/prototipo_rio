@@ -391,3 +391,66 @@ a { color: var(--turquesa-oscuro); }
 /* Espacio de la imagen del encabezado */
 .logo-header { padding: 1.2rem 1.25rem .4rem; text-align: center; }
 .logo-img { display: block; width: min(1100px, 100%); height: auto; margin: 0 auto; }
+
+/* ==========================================================
+   Nuevas secciones: caudal, ayer y hoy, videos, agua, impacto
+   ========================================================== */
+
+/* ---------- Caudal ---------- */
+.caudal { max-width: 720px; margin: 1.2rem auto 0; }
+.caudal__tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-bottom: 1rem; }
+.caudal__fig { margin: 0; background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); box-shadow: var(--sombra); overflow: hidden; }
+.caudal__fig svg { display: block; width: 100%; height: auto; }
+.caudal__fig figcaption { padding: .9rem 1.2rem; font-size: .95rem; border-top: 1px solid var(--linea); min-height: 4.6em; }
+
+/* ---------- Comparador ayer / hoy ---------- */
+.compare { margin: 0; }
+.compare__stage { --pos: 50%; position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radio); background: #ddd; box-shadow: var(--sombra); }
+.compare__img { position: absolute; inset: 0; background-size: cover; background-position: center; display: grid; place-items: center; text-align: center; }
+.compare__img--hoy { background-color: #cfe9ee; }
+.compare__img--ayer { background-color: #e6dcc3; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.compare__ph { font: 700 .85rem var(--fuente-titulos); color: var(--gris); padding: 0 1rem; }
+.compare__ph small { font: 400 .72rem var(--fuente-texto); color: var(--gris-suave); }
+.compare__img--ayer .compare__ph { transform: translateX(-25%); }
+.compare__img--hoy .compare__ph { transform: translateX(25%); }
+.compare__img.tiene-foto .compare__ph { display: none; }
+.compare__tag { position: absolute; top: .6rem; padding: .15rem .7rem; border-radius: 999px; font: 800 .68rem var(--fuente-titulos); text-transform: uppercase; letter-spacing: .08em; color: #fff; }
+.compare__tag--ayer { left: .6rem; background: #8a6d3b; }
+.compare__tag--hoy { right: .6rem; background: var(--turquesa-oscuro); }
+.compare__handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #fff; box-shadow: 0 0 6px rgba(0,0,0,.4); pointer-events: none; }
+.compare__handle::after { content: "↔"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 34px; height: 34px; border-radius: 50%; background: var(--naranja); color: #2b1d00; display: grid; place-items: center; font-weight: 800; box-shadow: var(--sombra); }
+.compare__range { width: 100%; margin: .6rem 0 .2rem; accent-color: var(--naranja); height: 28px; cursor: ew-resize; }
+.compare figcaption { font-size: .88rem; color: var(--gris-suave); line-height: 1.5; }
+.compare figcaption strong { display: block; font: 700 .8rem var(--fuente-titulos); text-transform: uppercase; letter-spacing: .04em; color: var(--gris-oscuro); }
+
+/* ---------- Videos ---------- */
+.video__box { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radio); overflow: hidden; background: linear-gradient(135deg, #7ec3e0, #1fa5ad); background-size: cover; background-position: center; display: grid; place-items: center; box-shadow: var(--sombra); }
+.video__box iframe, .video__box video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; }
+.video__play { width: 58px; height: 58px; border-radius: 50%; border: 0; background: var(--naranja); color: #2b1d00; font-size: 1.3rem; cursor: pointer; padding-left: 4px; box-shadow: var(--sombra); transition: transform .2s; }
+.video__play:hover { transform: scale(1.1); }
+.video__soon { position: absolute; bottom: .6rem; left: .6rem; background: rgba(0,0,0,.55); color: #fff; font: 700 .68rem var(--fuente-titulos); text-transform: uppercase; letter-spacing: .08em; padding: .2rem .7rem; border-radius: 999px; }
+.video h3 { font: 700 .85rem var(--fuente-titulos); text-transform: uppercase; letter-spacing: .03em; margin: .7rem 0 .2rem; }
+.video p { font-size: .88rem; color: var(--gris-suave); margin: 0; }
+
+/* ---------- Agua y cloacas (preguntas desplegables) ---------- */
+.qa { max-width: 760px; margin: 1.2rem auto 0; display: grid; gap: .6rem; }
+.qa__item { background: var(--blanco); border: 1px solid var(--linea); border-left: 5px solid var(--turquesa); border-radius: 8px; padding: .8rem 1.1rem; }
+.qa__item summary { cursor: pointer; font: 700 .98rem var(--fuente-titulos); color: var(--gris-oscuro); }
+.qa__item p { margin: .7rem 0 0; font-size: .95rem; }
+.ciclo { max-width: 760px; margin: 1.2rem auto 0; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; box-shadow: var(--sombra); }
+.ciclo svg { display: block; width: 100%; height: auto; }
+
+/* ---------- Impacto de la campaña ---------- */
+.impact { max-width: 720px; margin: 1.2rem auto 0; background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); padding: 1.5rem; box-shadow: var(--sombra); }
+.impact__total { text-align: center; margin-bottom: 1.2rem; }
+.impact__total strong { display: block; font: 800 2.8rem var(--fuente-titulos); color: var(--dorado); line-height: 1; }
+.impact__total span { color: var(--gris-suave); font-size: .92rem; }
+.impact__bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.impact__label { margin-bottom: .3rem; font-size: .95rem; }
+.impact__label strong { font: 800 1.15rem var(--fuente-titulos); color: var(--turquesa-oscuro); }
+.impact .progress__bar { transition: width 1.2s ease; }
+.impact .note[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .impact .progress__bar { transition: none; }
+}

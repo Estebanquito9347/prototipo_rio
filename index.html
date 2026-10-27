@@ -37,6 +37,8 @@
         <a href="#conoce">Conocé el río</a>
         <a href="#partes">Partes</a>
         <a href="#actividades">Actividades</a>
+        <a href="#ayer-hoy">Ayer y hoy</a>
+        <a href="#videos">Videos</a>
         <a href="#cuidado">Cuidado</a>
         <a href="#fuentes">Fuentes</a>
       </nav>
@@ -183,6 +185,34 @@
         <article class="mini"><span class="mini__icon">📍</span><h4>Desembocadura</h4><p>Donde termina: la laguna de Mar Chiquita, a unos 68–69 m s. n. m.</p></article>
       </div>
 
+      <!-- Caudal: comparación visual -->
+      <h3 class="subtitle">El caudal del río: bajo, normal y crecida</h3>
+      <p class="muted">El caudal es la cantidad de agua que lleva el río. Mirá cómo cambia el mismo tramo según la época:</p>
+      <div class="caudal" id="caudal">
+        <div class="caudal__tabs" role="group" aria-label="Elegir nivel de caudal">
+          <button class="chip is-active" data-nivel="bajo">Caudal bajo</button>
+          <button class="chip" data-nivel="normal">Caudal normal</button>
+          <button class="chip" data-nivel="crecida">Crecida</button>
+        </div>
+        <figure class="caudal__fig">
+          <svg viewBox="0 0 600 260" role="img" aria-label="Corte transversal del río con distintos niveles de agua">
+            <rect width="600" height="260" fill="#eaf5fb"/>
+            <!-- orillas y monte -->
+            <path d="M0 120 L120 150 L200 215 L400 215 L480 150 L600 120 V260 H0 Z" fill="#d9c7a0"/>
+            <path d="M0 120 L120 150 L200 215 L400 215 L480 150 L600 120" fill="none" stroke="#b79f6c" stroke-width="3"/>
+            <g fill="#4f8a5b"><circle cx="40" cy="100" r="20"/><circle cx="75" cy="112" r="16"/><circle cx="560" cy="100" r="20"/><circle cx="525" cy="112" r="16"/></g>
+            <g stroke="#6b4a2b" stroke-width="5"><path d="M40 118v-8M75 126v-8M560 118v-8M525 126v-8"/></g>
+            <!-- agua -->
+            <path id="aguaCaudal" d="M200 215 L400 215 L395 200 L205 200 Z" fill="#2a9fd6" opacity=".85" style="transition: d .5s"/>
+            <!-- escala -->
+            <line x1="300" y1="215" x2="300" y2="60" stroke="#444" stroke-dasharray="4 4"/>
+            <text id="caudalMedida" x="310" y="75" class="svg-label">Nivel: bajo</text>
+            <text x="14" y="245" class="svg-small" fill="#444">Esquema ilustrativo, sin escala</text>
+          </svg>
+          <figcaption id="caudalTexto" aria-live="polite"></figcaption>
+        </figure>
+      </div>
+
       <!-- Sectores de la costanera -->
       <h3 class="subtitle">El Xanaes dentro de Arroyito: recorrido por la costanera</h3>
       <p class="muted">La costanera tiene unos 2 km sobre la margen del río y está organizada por sectores. Este es el recorrido típico, de un extremo al otro:</p>
@@ -286,6 +316,110 @@
     </div>
   </section>
 
+  <!-- ============ AYER Y HOY ============ -->
+  <section class="section section--alt" id="ayer-hoy">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Comparación histórica</p>
+        <h2>El Xanaes <span>ayer y hoy</span></h2>
+        <p>Deslizá la barra para comparar cómo era el río y cómo es ahora. Cada cambio cuenta una parte de nuestra historia.</p>
+      </header>
+
+      <!--
+        CÓMO CARGAR LAS FOTOS: poné las imágenes en una carpeta "fotos" junto a index.html
+        y cambiá los nombres en data-ayer y data-hoy. Si la foto no existe, se ve un cartel
+        de "Foto pendiente". Conviene que ambas fotos de cada par tengan el mismo encuadre.
+      -->
+      <div class="grid grid--3 compare-grid">
+        <figure class="compare" data-ayer="fotos/costanera-ayer.jpg" data-hoy="fotos/costanera-hoy.jpg">
+          <div class="compare__stage">
+            <div class="compare__img compare__img--hoy"><span class="compare__ph">Foto pendiente<br><small>fotos/costanera-hoy.jpg</small></span></div>
+            <div class="compare__img compare__img--ayer"><span class="compare__ph">Foto pendiente<br><small>fotos/costanera-ayer.jpg</small></span></div>
+            <span class="compare__tag compare__tag--ayer">Ayer</span>
+            <span class="compare__tag compare__tag--hoy">Hoy</span>
+            <div class="compare__handle" aria-hidden="true"></div>
+          </div>
+          <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Comparar la costanera ayer y hoy">
+          <figcaption><strong>La costanera</strong>De un borde de río a un paseo de unos 2 km con playa, senderos, feria y parador.</figcaption>
+        </figure>
+
+        <figure class="compare" data-ayer="fotos/monte-ayer.jpg" data-hoy="fotos/monte-hoy.jpg">
+          <div class="compare__stage">
+            <div class="compare__img compare__img--hoy"><span class="compare__ph">Foto pendiente<br><small>fotos/monte-hoy.jpg</small></span></div>
+            <div class="compare__img compare__img--ayer"><span class="compare__ph">Foto pendiente<br><small>fotos/monte-ayer.jpg</small></span></div>
+            <span class="compare__tag compare__tag--ayer">Ayer</span>
+            <span class="compare__tag compare__tag--hoy">Hoy</span>
+            <div class="compare__handle" aria-hidden="true"></div>
+          </div>
+          <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Comparar el monte nativo ayer y hoy">
+          <figcaption><strong>El monte nativo</strong>Forestaciones escolares y biocorredor para recuperar el monte de las márgenes.</figcaption>
+        </figure>
+
+        <figure class="compare" data-ayer="fotos/saneamiento-ayer.jpg" data-hoy="fotos/saneamiento-hoy.jpg">
+          <div class="compare__stage">
+            <div class="compare__img compare__img--hoy"><span class="compare__ph">Foto pendiente<br><small>fotos/saneamiento-hoy.jpg</small></span></div>
+            <div class="compare__img compare__img--ayer"><span class="compare__ph">Foto pendiente<br><small>fotos/saneamiento-ayer.jpg</small></span></div>
+            <span class="compare__tag compare__tag--ayer">Ayer</span>
+            <span class="compare__tag compare__tag--hoy">Hoy</span>
+            <div class="compare__handle" aria-hidden="true"></div>
+          </div>
+          <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Comparar las obras de saneamiento antes y después">
+          <figcaption><strong>Obras de saneamiento</strong>Las obras de cloacas protegen el agua subterránea de la que se abastece la ciudad.</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="subtitle">Cómo fue cambiando el río</h3>
+      <ol class="timeline">
+        <li><strong>Antes: el Camino Real</strong><span>El río era una referencia para carretas y comerciantes. Arroyito era un punto clave del recorrido.</span></li>
+        <li><strong>Evolución de la costanera</strong><span>[Completar con fechas: cuándo se armó el balneario, la Isla de los Pájaros, el puente colgante, el Sector Joven…]</span></li>
+        <li><strong>Obras de saneamiento</strong><span>[Completar con fechas y datos de las obras de cloacas.] Hoy la obra del sector sur busca evitar la contaminación del agua subterránea.</span></li>
+        <li><strong>Recuperación del monte nativo</strong><span>Desde 2025, el biocorredor Xanaes–Plujunta une los parches de monte que quedan entre el Paraje La Curva y Marull.</span></li>
+      </ol>
+      <p class="note">Tip: pedí fotos antiguas a vecinos, al archivo del municipio o a instituciones de la ciudad, y siempre citá quién las prestó.</p>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS ============ -->
+  <section class="section" id="videos">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--dark">Mirá y escuchá</p>
+        <h2>El Xanaes <span>en video</span></h2>
+        <p>Recorridos, aves, voces de vecinos y la historia del río, filmados por estudiantes.</p>
+      </header>
+
+      <!--
+        CÓMO CARGAR LOS VIDEOS: en cada tarjeta completá UNA de estas dos opciones:
+        data-youtube="ID_DEL_VIDEO"  (lo que va después de watch?v= en el link de YouTube)
+        data-archivo="videos/nombre.mp4" (un archivo subido junto a la página)
+        Mientras estén vacíos se muestra "Próximamente".
+      -->
+      <div class="grid grid--3 video-grid">
+        <article class="video" data-youtube="" data-archivo="">
+          <div class="video__box"><button class="video__play" aria-label="Reproducir: Recorrido por la costanera">▶</button><span class="video__soon">Próximamente</span></div>
+          <h3>Recorrido por la costanera</h3><p>De la Isla de los Pájaros al Sector Joven, paso a paso.</p>
+        </article>
+        <article class="video" data-youtube="" data-archivo="">
+          <div class="video__box"><button class="video__play" aria-label="Reproducir: El río desde el aire">▶</button><span class="video__soon">Próximamente</span></div>
+          <h3>El río desde el aire</h3><p>Tomas con dron del cauce, las islas y el monte ribereño.</p>
+        </article>
+        <article class="video" data-youtube="" data-archivo="">
+          <div class="video__box"><button class="video__play" aria-label="Reproducir: Avistamiento de aves">▶</button><span class="video__soon">Próximamente</span></div>
+          <h3>Avistamiento de aves</h3><p>Quiénes viven y visitan las islas del Xanaes.</p>
+        </article>
+        <article class="video" data-youtube="" data-archivo="">
+          <div class="video__box"><button class="video__play" aria-label="Reproducir: Voces del río">▶</button><span class="video__soon">Próximamente</span></div>
+          <h3>Voces del río</h3><p>Entrevistas a vecinos: cómo vivieron y viven el Xanaes.</p>
+        </article>
+        <article class="video" data-youtube="" data-archivo="">
+          <div class="video__box"><button class="video__play" aria-label="Reproducir: Historia del río">▶</button><span class="video__soon">Próximamente</span></div>
+          <h3>Historia del río</h3><p>Del Camino Real al balneario de hoy.</p>
+        </article>
+      </div>
+      <p class="note">Si los videos son entrevistas, pedí permiso por escrito a las personas que aparecen (y a sus familias si son menores) antes de publicarlos.</p>
+    </div>
+  </section>
+
   <!-- ============ CUIDADO ============ -->
   <section class="section section--dark" id="cuidado">
     <div class="container">
@@ -308,6 +442,46 @@
           <h3>🚰 Agua y cloacas</h3>
           <p>Arroyito se abastece de agua subterránea, que se clora pero no pasa por planta potabilizadora. Por eso evitar su contaminación es esencial; la obra de cloacas del sector sur apunta a eso.</p>
         </article>
+      </div>
+
+      <!-- Agua y cloacas, más didáctico -->
+      <h3 class="subtitle">Del acuífero a la canilla</h3>
+      <div class="qa">
+        <details class="qa__item" open>
+          <summary>¿De dónde viene el agua que tomamos?</summary>
+          <p>La lluvia se filtra en el suelo y se acumula entre los granos de arena y grava del subsuelo: eso es el <strong>acuífero</strong>. Arroyito toma esa agua con perforaciones, la cloran y la distribuyen. Es agua subterránea, no viene directamente del río.</p>
+        </details>
+        <details class="qa__item">
+          <summary>¿Por qué es importante proteger el acuífero?</summary>
+          <p>Porque es nuestra reserva de agua. Se recarga lentamente, y el río y el subsuelo están conectados: lo que se filtra por la tierra y las márgenes puede terminar en el agua que usamos en casa.</p>
+        </details>
+        <details class="qa__item">
+          <summary>¿Qué pasa cuando se contaminan las aguas subterráneas?</summary>
+          <p>Limpiarlas es muy difícil, lleva años y cuesta mucho. Pozos negros sin mantenimiento, residuos y productos químicos pueden filtrarse hasta el acuífero. Por eso las <strong>cloacas</strong> son una obra de salud: llevan los líquidos cloacales lejos del agua que bebemos.</p>
+        </details>
+      </div>
+      <figure class="ciclo" aria-label="Esquema: lluvia, suelo, acuífero y perforación">
+        <svg viewBox="0 0 600 200" role="img" aria-label="Esquema del acuífero: la lluvia se infiltra, llena el acuífero y se extrae por una perforación">
+          <rect width="600" height="200" fill="#eaf5fb"/>
+          <rect y="70" width="600" height="130" fill="#d9c7a0"/>
+          <rect y="130" width="600" height="70" fill="#7ec3e0" opacity=".75"/>
+          <text x="20" y="165" class="svg-label">Acuífero (agua subterránea)</text>
+          <g stroke="#2a9fd6" stroke-width="3" stroke-linecap="round"><path d="M60 15v30M110 5v30M160 20v30M210 10v30"/></g>
+          <text x="20" y="62" class="svg-small" fill="#444">Lluvia que se infiltra ↓</text>
+          <rect x="420" y="40" width="14" height="140" fill="#555"/>
+          <rect x="400" y="28" width="54" height="14" rx="3" fill="#8e4a9e"/>
+          <text x="470" y="40" class="svg-label">Perforación</text>
+          <text x="470" y="58" class="svg-small" fill="#444">→ cloro → canilla</text>
+        </svg>
+      </figure>
+
+      <!-- Monte nativo: beneficios -->
+      <h3 class="subtitle">¿Para qué sirve el monte nativo?</h3>
+      <div class="grid grid--4 anatomy">
+        <article class="mini"><span class="mini__icon">🪨</span><h4>Reduce la erosión</h4><p>Las raíces sostienen las barrancas y evitan que las crecidas se lleven la tierra.</p></article>
+        <article class="mini"><span class="mini__icon">🦜</span><h4>Conserva la biodiversidad</h4><p>Da alimento y refugio a aves, insectos y mamíferos de la región.</p></article>
+        <article class="mini"><span class="mini__icon">💧</span><h4>Retiene agua</h4><p>El suelo con monte absorbe la lluvia y ayuda a recargar el acuífero.</p></article>
+        <article class="mini"><span class="mini__icon">🌍</span><h4>Captura carbono</h4><p>Los árboles toman dióxido de carbono del aire y lo guardan en su madera y en el suelo.</p></article>
       </div>
 
       <div class="flag">
@@ -342,6 +516,14 @@
           <h3 id="quizTitle">¿Cuánto sabés del Xanaes?</h3>
           <div id="quiz" class="quiz"></div>
         </section>
+      </div>
+
+      <!-- Impacto de la campaña -->
+      <h3 class="subtitle">Nosotros nos comprometimos</h3>
+      <div class="impact" id="impact">
+        <div class="impact__total"><strong id="impactTotal">0</strong><span>personas respondieron el compromiso</span></div>
+        <ul class="impact__bars" id="impactBars"></ul>
+        <p class="note" id="impactNote" hidden>Datos de ejemplo: reemplazarlos por los resultados reales de la encuesta (se editan en el archivo extras.js).</p>
       </div>
 
       <div class="share">
@@ -396,5 +578,6 @@
 <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
 
 <script src="script.js"></script>
+<script src="extras.js"></script>
 </body>
 </html>

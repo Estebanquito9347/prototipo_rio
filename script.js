@@ -193,7 +193,7 @@
   }
 
   /* ---------- Filtro de actividades ---------- */
-  var chips = $$(".chip");
+  var chips = $$("#chips .chip");
   var tarjetas = $$(".card--act");
   chips.forEach(function (c) {
     c.addEventListener("click", function () {
